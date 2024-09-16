@@ -1,21 +1,5 @@
 <!-- Barra Menu -->
-<ion-menu side="end" contentId="main-content">
-  <ion-header>
-    <ion-toolbar color="tertiary">
-      <ion-title>{{titulo}}</ion-title>
-      <ion-buttons slot="start">
-        <ion-back-button text="regresar" defaultHref="/"></ion-back-button>
-      </ion-buttons>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content class="ion-padding">
-    <ion-button routerLink="/login" expand="block">Log-In</ion-button>
-    <ion-button routerLink="/productos" expand="block">Productos</ion-button>
-    <ion-button routerLink="/carrito" expand="block">Carrito de compras</ion-button>
-    <ion-button routerLink="/quienes-somos" expand="block">Quienes Somos</ion-button>
-  </ion-content>
-</ion-menu>
-
+<ion-menu></ion-menu>
 <!--Logo y Titulo-->
 <ion-content id="main-content">
   <ion-header>
@@ -25,14 +9,7 @@
         <ion-title routerLink="/inicio">TEKOWAVE</ion-title>
         <ion-buttons slot="end">
           <ion-menu-button></ion-menu-button>
-          <!--Boton Carrito-->
-          <ion-buttons slot="end">
-            <ion-button fill="clear" routerLink="/carrito">
-              <ion-icon name="cart"></ion-icon>
-              <ion-text>Carrito</ion-text>
-              <ion-badge color="secondary">0</ion-badge>
-            </ion-button>
-          </ion-buttons>
+
         </ion-buttons>
       </div>
       <!--Barra Buscar-->
@@ -42,11 +19,41 @@
       <!---->
     </ion-toolbar>
   </ion-header>
-</ion-content>
+
 <!-- Contenido Principal -->
 
-<ion-content class="ion-padding">
+<div style="text-align: center; margin-top: 20px;">
+  <h3>¡Hola! Bienvenido a Tekowave</h3>
+</div>
 
-  Explora más opciones en nuestra barra de herramientas. ¡Haz clic y descubre!
-
+  <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/media/ca1.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/media/ca2.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/media/ca7.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    
+    
+  </div>
 </ion-content>
+
+
+
+
+<ion-text class="ion-text-center">
+  <small>&copy; 2023 <b>TekoWave</b> - Todos los Derechos Reservados.</small>
+</ion-text>

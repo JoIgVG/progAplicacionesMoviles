@@ -12,10 +12,6 @@ const routes: Routes = [
     loadChildren: () => import('./pages/inicio/inicio.module').then( m => m.InicioPageModule)
   },
   {
-    path: 'carrito',
-    loadChildren: () => import('./pages/carrito/carrito.module').then( m => m.CarritoPageModule)
-  },
-  {
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
@@ -28,6 +24,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/quienes-somos/quienes-somos.module').then( m => m.QuienesSomosPageModule)
   },
   { path: '', redirectTo: 'inicio', pathMatch: 'full' },
+  {
+    path: 'registro',
+    loadChildren: () => import('./pages/registro/registro.module').then( m => m.RegistroPageModule)
+  },
 ];
 
 @NgModule({
