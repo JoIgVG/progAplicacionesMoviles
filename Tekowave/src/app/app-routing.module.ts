@@ -24,7 +24,10 @@ const routes: Routes = [
     loadChildren: () => import('./pages/quienes-somos/quienes-somos.module').then( m => m.QuienesSomosPageModule)
   },
   { path: '', redirectTo: 'inicio', pathMatch: 'full' },
+<<<<<<< HEAD
   
+=======
+>>>>>>> 19a223438af2c8b9d0c46063db8da656804e096d
   {
     path: 'registro',
     loadChildren: () => import('./pages/registro/registro.module').then( m => m.RegistroPageModule)
